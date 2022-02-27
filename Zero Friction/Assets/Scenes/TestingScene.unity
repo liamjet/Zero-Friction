@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &88144939 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2636615202551124282, guid: 92518e01bf4986b47ad56823bcf9754c, type: 3}
+  m_PrefabInstance: {fileID: 2636615203509119309}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &191678681
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,6 +614,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1038758814}
   - component: {fileID: 1038758813}
+  - component: {fileID: 1038758816}
+  - component: {fileID: 1038758815}
   m_Layer: 0
   m_Name: BadGuy1
   m_TagString: Untagged
@@ -681,6 +688,73 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1038758815
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038758812}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.08059659, y: -0.021876454}
+  - {x: -0.08083733, y: -0.03962761}
+  - {x: -0.025321215, y: -0.059147432}
+  - {x: 0.021710195, y: -0.058496952}
+  - {x: 0.02855055, y: -0.04822126}
+  - {x: 0.02874384, y: -0.030996725}
+  - {x: 0.0017689839, y: -0.02092345}
+  - {x: 0.0007326007, y: -0.00050984323}
+  - {x: 0.030593202, y: -0.00041425228}
+  - {x: 0.059766825, y: 0.008547664}
+  - {x: 0.098851115, y: 0.020904481}
+  - {x: 0.096851416, y: 0.030037194}
+  - {x: 0.07131897, y: 0.038718462}
+  - {x: 0.01159966, y: 0.048884094}
+  - {x: -0.050133668, y: 0.049955428}
+  - {x: -0.07970236, y: 0.031167656}
+  - {x: -0.079439156, y: 0.0025469959}
+  - {x: -0.05936628, y: -0.00015759468}
+  - {x: -0.06015817, y: -0.010673821}
+  - {x: -0.07946395, y: -0.009802818}
+  - {x: -0.079830706, y: -0.02268669}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!50 &1038758816
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038758812}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!4 &1137124426 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2636615203707554708, guid: 92518e01bf4986b47ad56823bcf9754c, type: 3}
+  m_PrefabInstance: {fileID: 2636615203509119309}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1588949682
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,6 +907,22 @@ CircleCollider2D:
   m_Offset: {x: -0.0074500367, y: 0}
   serializedVersion: 2
   m_Radius: 0.07254996
+--- !u!114 &1892366687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892366679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18b7beecfba7c3f4fbfe8022857b4836, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint1: {fileID: 88144939}
+  firePoint2: {fileID: 1137124426}
+  missilePrefab: {fileID: 7573288471276937556, guid: c0614295c17ef6a4cb26d60af27a919a, type: 3}
+  shootDelayInSeconds: 1
 --- !u!1001 &2636615203509119309
 PrefabInstance:
   m_ObjectHideFlags: 0
